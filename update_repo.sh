@@ -3,8 +3,8 @@
 # Get initial working directory
 initial_pwd="$PWD"
 
-# Set environment variables
-./env_vars.sh
+# Source the environment variables
+ source env_vars.sh
 
 # Get confirmation from user
 read -p "Are you sure you want to overwrite "$REPO"/"$REPO_SCRIPT" with content from "$SCRIPT"? (y/n): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE] ]] || exit 1

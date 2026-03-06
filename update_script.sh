@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Set environment variables
-./env_vars.sh
+# Source the environment variables
+source env_vars.sh
 
 # Get confirmation from user
 read -p "Are you sure you want to overwrite "$SCRIPT" with content from "$REPO"/"$REPO_SCRIPT"? (y/n): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE] ]] || exit 1

@@ -19,7 +19,7 @@ cd "$REPO"
 
 # Use git commands to commit changes
 git add .
-git commit -m "$message"
+git commit -m $message
 
 # Return to initial working directory
 cd "$initial_pwd"
